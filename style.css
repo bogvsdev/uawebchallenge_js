@@ -1,0 +1,216 @@
+::-webkit-selection {
+    color: #150E7E;
+    background: rgba(26, 61, 199, 0.33);
+}
+::-moz-selection {
+    color: #150E7E;
+    background: rgba(26, 61, 199, 0.33);
+}
+::selection {
+    color: #150E7E; 
+    background: rgba(26, 61, 199, 0.33);
+}
+body {
+	background: #fff url(bg.jpg) no-repeat fixed;
+	background-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+.wrap {
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	margin: 50px 0;
+}
+header h2 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+#db {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	list-style: none;
+}
+.result {
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	background: rgba(46, 234, 48, 0.23);
+	border: 2px solid rgba(60, 127, 240, 0.11);
+	border-radius: 5px;
+	box-shadow: 0 0 50px rgba(46, 234, 48, 0.13);
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+.questBlock {
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	background: rgba(16, 245, 219, 0.19);
+	border: 2px solid rgba(60, 127, 240, 0.11);
+	border-radius: 5px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+.result h3, .questBlock h3 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color: #2B2B2B;
+	padding: 50px 0 0 0px;
+}
+.result h3 {
+	vertical-align: center;
+}
+.btn {
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	background: rgba(16, 245, 219, 0.08);
+	border: 2px solid rgba(60, 127, 240, 0.21);
+	border-radius: 20px;
+	outline: none;
+	margin: 0;
+}
+.btn:active {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.btn:disabled {
+	background: rgba(89, 89, 89, 0.26);
+}
+.btn:disabled:hover {
+	background: rgba(89, 89, 89, 0.26);
+}
+.btn.yes.selected:disabled {
+	background: rgba(109, 245, 16, 0.35);
+}
+.btn.no.selected:disabled {
+	background: rgba(245, 68, 16, 0.35);
+}
+.yes {
+	background: rgba(109, 245, 16, 0.35);
+	transition:background .3s ease;
+	-webkit-transition:background .3s ease;
+	-moz-transition:background .3s ease;
+	-ms-transition:background .3s ease;
+}
+.yes:hover {
+	background: rgba(109, 245, 16, 0.55);
+}
+.no {
+	background: rgba(245, 68, 16, 0.35);
+	transition:background .3s ease;
+	-webkit-transition:background .3s ease;
+	-moz-transition:background .3s ease;
+	-ms-transition:background .3s ease;
+}
+.no:hover {
+	background: rgba(245, 68, 16, 0.55);
+}
+/*
+	Animation
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
